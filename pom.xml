@@ -63,5 +63,17 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<!-- 
+		For example, if your organization is named "octocat" and your repository is named "hello-world", 
+	    then the GitHub Packages configuration in pom.xml would look similar to the below example. 
+	-->
+	
+	<distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/zohir-era/demo</url>
+    </repository>
+  </distributionManagement>
+  
 </project>
